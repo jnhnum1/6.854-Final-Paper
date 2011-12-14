@@ -31,7 +31,7 @@ The Travelling Salesman Problem (TSP) is perhaps one of the most well-known NP-C
 
 A particular variant of the general TSP specifies that the weight function $w$ satisfies the triangle inequality, that is: $w(x,y)+w(y,z) \leq w(x,z)$. This is referred to as the {\bf metric-TSP}.
 
-A lot of work has been done to study metric-TSP. It has been shown that metric-TSP is in the class APX-hard. This implies that it is impossible to device a Polynomial Time Approximation Scheme (PTAS) for it unless P=NP. Therefore we cannot arbitrarily approximate metric-TSP. Indeed, it is shown that it is NP-hard to approximate metric-TSP with a ratio better than 220/219 [2].
+A lot of work has been done to study metric-TSP. It has been shown that metric-TSP is in the class APX-hard. This implies that it is impossible to devise a Polynomial Time Approximation Scheme (PTAS) for it unless P=NP. Therefore we cannot arbitrarily approximate metric-TSP. Indeed, it is shown that it is NP-hard to approximate metric-TSP with a ratio better than 220/219 [2].
 
 For more than 30 years, the best known approximation algorithm for metric-TSP is the Christofides [3] algorithm, which achieves an approximation ratio of 3/2.
 
@@ -396,7 +396,7 @@ violated.
 Now we analyze the cost of this circulation.  This is mostly algebra, but there
 are a few insights for each part.
 
-It is equal to 
+The total cost is equal to
 \[
 \sum_{v \in \mathcal{I}} \max(f(B(v))-1, 0)
 \]
