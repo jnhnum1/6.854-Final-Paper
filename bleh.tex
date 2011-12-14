@@ -23,8 +23,6 @@
 \usepackage{amssymb}
 \usepackage{mathrsfs}
 
-
-
 \begin{document}
 \maketitle
 
@@ -362,16 +360,17 @@ violated.
 Now we analyze the cost of this circulation.
 
 It is equal to 
-\[
-\sum_{v \in \mathcal{I}} \max(f(B(v))-1, 0)
-\], which is upper-bounded by
+$\sum_{v \in \mathcal{I}} \max(f(B(v))-1, 0)$, which is upper-bounded by
+$\sum_{v \in \mathcal{I}} \max(f'(B(v))-1,0) + \sum_{v in \mathcal{I}}
+f''(B(v))$.
 
-\[
-\sum_{v \in \mathcal{I}} \max(f'(B(v))-1,0) + \sum_{v in \mathcal{I}} f''(B(v))
-\]
+{\bf Lemma 7}
+$\sum_{v \in \mathcal{I}} f''(B(v)) \le OPT(LP(G)) - n$.
 
-I claim that $\sum_{v in \mathcal{I}} f''(B(v)) \le OPT(LP(G)) - n$.
-Also, $\sum_{v in \mathcal{I}} \max(f'(B(v)) - 1, 0) \le (7 - 6 \sqrt{2})n +
+To go about proving this, 
+
+{\bf Lemma 8}
+Also, $\sum_{v \in \mathcal{I}} \max(f'(B(v)) - 1, 0) \le (7 - 6 \sqrt{2})n +
 4(\sqrt{2} - 1)OPT(LP(G))$.  However, I will not prove either of these.
 
 Combining the two gives us that the cost of the circulation is upper-bounded by
