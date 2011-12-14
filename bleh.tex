@@ -237,10 +237,12 @@ $T$ to classify the edges of $G$ as directed edges which are either {\bf tree
 edges}, which are in $T$ and directed towards $T$'s leaves, and {\bf back
 edges}, which are directed towards the root.  Notably, there are no cross edges.
 
-We extend $G$ to obtain an integral min-cost circulation problem $C(G, T)$ with
-edge flow lower bounds.  Every tree edge has a flow lower bound of $1$, and
-$G'$ is the set of all edges in $G$ which correspond to positive-flow edges in
-$C(G,T)$, so $G'$ will clearly span $G$.  No other edge has a flow lower bound.  
+We extend $G$ to obtain a min-cost circulation problem $C(G, T)$ with integer
+edge flow lower bounds, and integer costs and weights.  By Hoffman's circulation
+theorem [CITE], there exists an integer solution. Every tree edge has a
+flow lower bound of $1$, and $G'$ is the set of all edges in $G$ which
+correspond to positive-flow edges in $C(G,T)$, so $G'$ will clearly span $G$.
+No other edge has a flow lower bound.  
 
 We would like to distinguish back-edges that come from different sub-trees to
 make sure that the graph stays connected when edges are removed, so we introduce
